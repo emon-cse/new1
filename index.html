@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4b6cb7, #182848);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .login-container {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+      width: 320px;
+      padding: 32px;
+      backdrop-filter: blur(10px);
+    }
+    .login-container h1 {
+      margin: 0 0 24px;
+      font-size: 28px;
+      text-align: center;
+    }
+    .login-container label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      font-size: 15px;
+    }
+    .login-container input:focus {
+      outline: none;
+      border-color: #8ab4f8;
+      box-shadow: 0 0 0 3px rgba(138, 180, 248, 0.18);
+      background: rgba(255, 255, 255, 0.18);
+    }
+    /* Placeholder color to green */
+    .login-container input::placeholder {
+      color: #00b300; /* green */
+      opacity: 1; /* ensure visibility */
+    }
+    .login-container input::-webkit-input-placeholder { color: #00b300; }
+    .login-container input::-moz-placeholder { color: #00b300; }
+    .login-container input:-ms-input-placeholder { color: #00b300; }
+    .login-container input:-moz-placeholder { color: #00b300; }
+    .login-container button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      background: #5b8cff;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .login-container button:hover {
+      background: #3d6bff;
+    }
+    .login-footer {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    .login-footer a {
+      color: #cfe2ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Sign In</h1>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <button type="submit">Log In</button>
+    </form>
+    <div class="login-footer">
+      <p>Forgot your password? <a href="#">Reset it</a></p>
+      <P>This is a new text</P>
+    </div>
+  </div>
+</body>
+</html>
